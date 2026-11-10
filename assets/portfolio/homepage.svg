@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <style>
+    .paper { fill: #f5f3ec; }
+    .ink { fill: #202720; }
+    .muted { fill: #72766f; }
+    .blue { fill: #243e70; }
+    .orange { fill: #ec6c50; }
+    .sans { font-family: Arial, sans-serif; }
+    .serif { font-family: Georgia, serif; font-style: italic; }
+    @media (prefers-color-scheme: dark) {
+      .paper { fill: #171a1e; }
+      .ink { fill: #edf1ec; }
+      .muted { fill: #a3aea8; }
+      .blue { fill: #b5c5f0; }
+      .orange { fill: #ee896f; }
+    }
+  </style>
+  <rect class="paper" width="1200" height="800" />
+  <g class="sans">
+    <circle cx="104" cy="78" r="20" fill="#243e70" />
+    <text x="104" y="83" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">ZB</text>
+    <text class="ink" x="136" y="83" font-size="15" font-weight="700">Zdeněk Barth</text>
+    <text class="muted" x="912" y="82" font-size="13" font-weight="600">About</text>
+    <text class="muted" x="992" y="82" font-size="13" font-weight="600">Projects</text>
+    <text class="muted" x="1080" y="82" font-size="13" font-weight="600">Contact</text>
+    <line x1="80" y1="112" x2="1120" y2="112" stroke="#d8d8cd" />
+    <text class="ink" x="102" y="334" font-size="106" font-weight="500" letter-spacing="-8">I build useful</text>
+    <text class="blue serif" x="102" y="454" font-size="112" letter-spacing="-8">things.</text>
+    <text class="muted" x="106" y="525" font-size="23">I'm Zdeněk Barth. I work across frontend and backend development,</text>
+    <text class="muted" x="106" y="560" font-size="23">turning practical problems into useful web apps.</text>
+    <rect class="ink" x="106" y="612" width="206" height="52" rx="3" />
+    <text class="paper" x="130" y="645" font-size="14" font-weight="700">Selected projects</text>
+    <text class="paper" x="284" y="645" font-size="19">↓</text>
+    <circle class="orange" cx="104" cy="713" r="4" />
+    <text class="muted" x="120" y="718" font-size="12" letter-spacing="1.2">PERSONAL PORTFOLIO</text>
+  </g>
+</svg>

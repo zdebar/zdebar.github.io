@@ -1,0 +1,385 @@
+[
+  {
+    "slug": "english-app",
+    "number": "01",
+    "title": "English App",
+    "category": "Language learning",
+    "status": "Personal project",
+    "artClass": "art-english",
+    "imageMode": "phone",
+    "image": "/assets/english-app/01.png",
+    "imageAlt": "English App home screen with options for pronunciation, vocabulary, and grammar practice",
+    "imageWidth": 320,
+    "imageHeight": 640,
+    "screenshots": [
+      {
+        "src": "/assets/english-app/01.png",
+        "width": 320,
+        "height": 640,
+        "alt": "English App home screen with options for pronunciation, vocabulary, and grammar practice"
+      },
+      {
+        "src": "/assets/english-app/02.png",
+        "width": 320,
+        "height": 640,
+        "alt": "Pronunciation practice screen with vowel and consonant categories"
+      },
+      {
+        "src": "/assets/english-app/03.png",
+        "width": 320,
+        "height": 640,
+        "alt": "Pronunciation guide with articulation tips and sound practice options"
+      },
+      {
+        "src": "/assets/english-app/04.png",
+        "width": 320,
+        "height": 640,
+        "alt": "Vocabulary flashcard showing the Czech word stačit, its English translation, and practice controls"
+      },
+      {
+        "src": "/assets/english-app/05.png",
+        "width": 320,
+        "height": 640,
+        "alt": "Pronunciation exercise for the consonant b with audio controls"
+      },
+      {
+        "src": "/assets/english-app/06.png",
+        "width": 320,
+        "height": 640,
+        "alt": "Learning library menu with sections for sounds, vocabulary, topics, and grammar"
+      },
+      {
+        "src": "/assets/english-app/07.png",
+        "width": 320,
+        "height": 640,
+        "alt": "Overview of English vowels and consonant sounds"
+      },
+      {
+        "src": "/assets/english-app/08.png",
+        "width": 320,
+        "height": 640,
+        "alt": "English vocabulary list with Czech translations"
+      },
+      {
+        "src": "/assets/english-app/09.png",
+        "width": 320,
+        "height": 640,
+        "alt": "Topic list showing personal interests"
+      },
+      {
+        "src": "/assets/english-app/10.png",
+        "width": 320,
+        "height": 640,
+        "alt": "Grammar lesson list showing Present Simple and the verb be"
+      },
+      {
+        "src": "/assets/english-app/11.png",
+        "width": 640,
+        "height": 320,
+        "alt": "Practice card showing landscape UI"
+      },
+      {
+        "src": "/assets/english-app/12.png",
+        "width": 640,
+        "height": 320,
+        "alt": "Practice card showing dark mode"
+      }
+    ],
+    "detailsUrl": "/projects/english-app/",
+    "description": "My free English learning app aims to maximize the number of practice repetitions per unit of time while providing complete language-learning capabilities.",
+    "technologies": [
+      "React",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "Zustand",
+      "Dexie / IndexedDB",
+      "Supabase",
+      "PostgreSQL",
+      "Workbox PWA",
+      "GitHub Actions",
+      "CI/CD"
+    ],
+    "detailSections": [
+      {
+        "id": "english-project-title",
+        "eyebrow": "01",
+        "title": "Project",
+        "type": "paragraphs",
+        "paragraphs": [
+          "Czech students study English for 12 years, yet many still struggle to speak. I believe the problem is a lack of practice. Adults should be able to learn English in about a year; children may need a little longer. A few sentences per class aren’t enough. This app makes intensive practice easy, with up to 600 repetitions an hour—just one tap away."
+        ]
+      },
+      {
+        "id": "english-contribution-title",
+        "eyebrow": "02",
+        "title": "Contribution",
+        "type": "paragraphs",
+        "paragraphs": [
+          "So far, I’m the sole developer. I’m currently looking for an English teacher willing to create polished learning materials."
+        ]
+      },
+      {
+        "id": "english-highlights-title",
+        "eyebrow": "03",
+        "title": "Goals",
+        "type": "paragraphs",
+        "paragraphs": [
+          { "before": "", "bold": "One app", "after": " brings pronunciation, listening, vocabulary, and grammar practice together in one place." },
+          { "before": "", "bold": "Maximize", "after": " the number of useful practice repetitions per hour, so learners can make the most of each session." },
+          { "before": "Keep it ", "bold": "free", "after": " so cost does not get in the way of regular practice." }
+        ]
+      },
+      {
+        "id": "english-principles-title",
+        "eyebrow": "04",
+        "title": "Principles",
+        "type": "paragraphs",
+        "paragraphs": [
+          { "before": "", "bold": "Flashcards", "after": ": Learners practice in both directions, English to Czech and Czech to English. This builds active recall, not just recognition." },
+          { "before": "", "bold": "Spaced Repetition System (SRS)", "after": ": Learners rate how well they recalled each answer. Difficult items return more often, while familiar ones are reviewed less frequently." },
+          { "before": "", "bold": "Small lessons", "after": ": Short grammar and vocabulary lessons keep each step manageable. Overviews show what learners have practiced rather than the full amount still ahead, so beginners are not overwhelmed." },
+          { "before": "", "bold": "Listening and speaking", "after": ": These are the skills learners often find hardest, so the app focuses practice on understanding and speaking English." },
+          { "before": "", "bold": "Flexible practice", "after": ": Learners can study whenever it suits them and choose a pace that fits their schedule." },
+          { "before": "", "bold": "Fast and offline", "after": ": The PWA runs on desktop, Android, and iOS, and each action takes under 100 ms. After the initial download, it works fully offline. Personal data is stored in IndexedDB and backed up to Supabase." },
+          { "before": "", "bold": "Learning content", "after": ": I write lessons by hand and am looking for help developing a complete curriculum. Pronunciation guides use IPA, with audio generated by eSpeak and Google Cloud Text-to-Speech." }
+        ]
+      },
+      {
+        "id": "english-future-title",
+        "eyebrow": "05",
+        "title": "Future",
+        "type": "paragraphs",
+        "paragraphs": [
+          "Daily reminders.",
+          "LLM-based pronunciation feedback: I have tested it, but it is not yet good enough to justify adding it."
+        ]
+      },
+      {
+        "id": "english-implementation-title",
+        "eyebrow": "06",
+        "title": "Implementation",
+        "type": "paragraphs",
+        "paragraphs": [
+          "The backend uses Supabase with a PostgreSQL database and RPC functions instead of a traditional backend server.",
+          "The frontend uses Vite, React, and Tailwind CSS. The app is primarily intended as a PWA, with data stored in IndexedDB. It syncs regularly with Supabase to preserve data and remains fully functional offline."
+        ]
+      },
+      {
+        "id": "english-reflection-title",
+        "eyebrow": "07",
+        "title": "Reflection",
+        "type": "paragraphs",
+        "paragraphs": [
+          "I should have started with an MVP (Minimum Viable Product). Instead, I was unrealistically optimistic about what the app should do. Testing later proved me wrong: by then, the app had already become unnecessarily complex for its stage of development. Technical development is easy—and especially with AI, it’s now quite fast—but UX development is hard and time-consuming."
+        ]
+      },
+      {
+        "id": "english-technologies-title",
+        "eyebrow": "08",
+        "title": "Technologies",
+        "type": "stack"
+      },
+      {
+        "id": "english-links-title",
+        "eyebrow": "09",
+        "title": "Links",
+        "type": "explore"
+      }
+    ],
+    "links": [
+      {
+        "label": "Try the app",
+        "url": "https://zdebar.github.io/028-English-App/#/"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/zdebar/020-flash-card-app-typescript"
+      }
+    ]
+  },
+  {
+    "slug": "integration-lab",
+    "number": "02",
+    "title": "Integration Lab",
+    "category": "Full-stack playground",
+    "status": "Ongoing",
+    "artClass": "art-integration",
+    "image": "/assets/integration-lab/integration-lab.png",
+    "imageAlt": "Purple and white layered graphic representing the Integration Lab project",
+    "imageWidth": 560,
+    "imageHeight": 1120,
+    "detailsUrl": "/projects/integration-lab/",
+    "description": "A local playground for exploring web technologies and integrations, from a React frontend and Fastify API to PostgreSQL, GraphQL, and Docker Compose.",
+    "technologies": [
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "Node.js",
+      "Fastify",
+      "PostgreSQL",
+      "GraphQL",
+      "OpenAPI",
+      "Docker Compose"
+    ],
+    "caseStudy": {
+      "overview": "A local playground for experimenting with full-stack integrations across a React frontend, Fastify API, PostgreSQL database, and Docker Compose environment.",
+      "reflection": "My original goal was to use this as a learning project and test the integration of different technologies into a full-stack application. I quickly realized that all I needed was to read the documentation and put it into practice."
+    },
+    "detailSections": [
+      {
+        "id": "integration-overview-title",
+        "eyebrow": "01 / Project",
+        "title": "Overview",
+        "type": "overview"
+      },
+      {
+        "id": "integration-scope-title",
+        "eyebrow": "02 / Scope",
+        "title": "Scope",
+        "type": "scope",
+        "note": "A checkmark marks a dependency used in the project or an experiment recorded as complete in its documentation. Unmarked items are either not yet integrated or still planned.",
+        "groups": [
+          {
+            "title": "Core stack",
+            "items": [
+              { "name": "Docker Compose", "checked": true },
+              { "name": "React and React DOM", "checked": true },
+              { "name": "Vite and the React plugin", "checked": true },
+              { "name": "Tailwind CSS and its Vite plugin", "checked": true },
+              { "name": "Node.js and Fastify", "checked": true },
+              { "name": "PostgreSQL", "checked": true }
+            ]
+          },
+          {
+            "title": "API and tooling",
+            "items": [
+              { "name": "CORS (@fastify/cors)", "checked": true },
+              { "name": "OpenAPI and Swagger UI", "checked": true },
+              { "name": "GraphQL and Mercurius", "checked": true },
+              {
+                "name": "PostgreSQL client and connection pool (pg)",
+                "checked": true
+              },
+              { "name": "Environment configuration (dotenv)", "checked": true },
+              {
+                "name": "Database migrations (node-pg-migrate)",
+                "checked": true
+              },
+              { "name": "Oxlint", "checked": true }
+            ]
+          },
+          {
+            "title": "PostgreSQL experiments",
+            "items": [
+              {
+                "name": "CLI, migrations, seed data, constraints, normalization and joins",
+                "checked": true
+              },
+              {
+                "name": "CRUD, parameterized queries, filtering, pagination and aggregation",
+                "checked": true
+              },
+              {
+                "name": "Transactions, connection pooling, isolation and row locks",
+                "checked": true
+              },
+              {
+                "name": "EXPLAIN, query plans, partial and composite indexes",
+                "checked": true
+              },
+              {
+                "name": "JSONB, full-text search, triggers, database roles and row-level security",
+                "checked": true
+              },
+              { "name": "Backup and restore", "checked": true },
+              {
+                "name": "Webhook deduplication, transactional outbox, retries and LISTEN/NOTIFY",
+                "checked": true
+              }
+            ]
+          },
+          {
+            "title": "Frontend and real-time",
+            "items": [
+              { "name": "Web Workers and Service Workers", "checked": true },
+              {
+                "name": "Polling, Server-Sent Events and WebSockets",
+                "checked": true
+              }
+            ]
+          },
+          {
+            "title": "Operations and integrations",
+            "items": [
+              { "name": "GitHub Actions and CI/CD", "checked": true },
+              {
+                "name": "OpenTelemetry: logs, metrics and traces",
+                "checked": true
+              },
+              {
+                "name": "Health checks, alerts, error reporting and profiling",
+                "checked": true
+              },
+              { "name": "Rate limiting and caching", "checked": true },
+              { "name": "Stripe", "checked": true },
+              {
+                "name": "Language-model integration and chat over business data",
+                "checked": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "integration-reflection-title",
+        "eyebrow": "03 / Reflection",
+        "title": "Reflection",
+        "type": "reflection"
+      },
+      {
+        "id": "integration-stack-title",
+        "eyebrow": "04 / Stack",
+        "title": "Technologies",
+        "type": "stack"
+      },
+      {
+        "id": "integration-links-title",
+        "eyebrow": "05 / Explore",
+        "title": "Links",
+        "type": "explore"
+      }
+    ],
+    "links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/zdebar/037-Integration-Lab"
+      }
+    ]
+  },
+  {
+    "slug": "portfolio",
+    "number": "03",
+    "title": "Personal Portfolio",
+    "category": "Personal website",
+    "status": "Ongoing",
+    "artClass": "art-portfolio",
+    "image": "/assets/portfolio/homepage.svg",
+    "imageAlt": "Preview of the Personal Portfolio homepage",
+    "imageWidth": 1200,
+    "imageHeight": 800,
+    "description": "A lightweight, responsive portfolio for presenting projects, technologies, and contact details.",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "Tailwind CSS",
+      "Eleventy",
+      "Nunjucks",
+      "Node.js",
+      "Git",
+      "GitHub Pages",
+      "GitHub Actions"
+    ],
+    "links": []
+  }
+]

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth scroll-pt-20 motion-reduce:scroll-auto">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      name="theme-color"
+      content="#f5f3ec"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#171a1e"
+      media="(prefers-color-scheme: dark)"
+    />
+    <meta name="description" content="{{ description }}" />
+    <title>{{ title }}</title>
+    <link rel="icon" type="image/svg+xml" href="{{ '/assets/favicon.svg' | url }}" />
+    <link rel="stylesheet" href="{{ '/assets/site.css' | url }}" />
+  </head>
+  <body>
+    <a class="skip-link fixed left-2 top-2 z-110 translate-y-[-160%] p-2 focus:translate-y-0" href="#content">Skip to content</a>
+    {% include "components/site-header.njk" %}
+    {{ content | safe }}
+    {% include "components/site-footer.njk" %}
+  </body>
+</html>

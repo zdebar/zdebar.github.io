@@ -1,0 +1,18 @@
+{
+  "name": "zdenek-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "npm run build:css && eleventy",
+    "build:css": "tailwindcss -i ./style.css -o ./assets/site.css --minify",
+    "start": "npm run build:css && concurrently --kill-others \"npm:watch:css\" \"npm:serve\"",
+    "watch:css": "tailwindcss -i ./style.css -o ./assets/site.css --watch",
+    "serve": "eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.6",
+    "@tailwindcss/cli": "^4.3.5",
+    "concurrently": "^10.0.7",
+    "tailwindcss": "^4.3.5"
+  }
+}

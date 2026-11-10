@@ -1,0 +1,27 @@
+<header class="site-header sticky top-0 z-100 border-b border-line bg-paper backdrop-blur-[14px]">
+  <div class="page-width flex h-18 items-center justify-between">
+    <a class="wordmark inline-flex shrink-0 items-center gap-2 whitespace-nowrap" href="{{ '/' | url }}#top" aria-label="Zdeněk Barth, home">
+      <span class="wordmark-mark grid size-7.5 place-items-center rounded-full" aria-hidden="true">ZB</span>
+      <span>Zdeněk Barth</span>
+    </a>
+    <details class="mobile-menu relative sm:hidden">
+      <summary class="mobile-menu-toggle">
+        <span>Menu</span>
+        <span class="hamburger-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+      </summary>
+      <nav class="mobile-menu-panel" aria-label="Main navigation">
+        {% include "components/site-nav-links.njk" %}
+      </nav>
+    </details>
+    <nav class="desktop-nav hidden items-center gap-6 sm:flex" aria-label="Main navigation">
+        {% include "components/site-nav-links.njk" %}
+      </nav>
+  </div>
+</header>
+<script>
+  document.querySelectorAll(".mobile-menu-panel a").forEach(function attachMobileMenuClose(link) {
+    link.addEventListener("click", function closeMobileMenu() {
+      link.closest(".mobile-menu").open = false;
+    });
+  });
+</script>
