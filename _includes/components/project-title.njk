@@ -1,9 +1,1 @@
-{% set titleWords = project.title | splitWords -%}
-{%- for word in titleWords %}
-  {%- if loop.index == 2 -%}
-    <em class="title-accent">{{ word }}</em>
-  {%- else -%}
-    {{ word }}
-  {%- endif -%}
-  {%- if not loop.last %} {% endif -%}
-{%- endfor %}
+{{ project.title }}
