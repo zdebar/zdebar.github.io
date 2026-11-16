@@ -86,7 +86,7 @@
       }
     ],
     "detailsUrl": "/projects/english-app/",
-    "description": "My free English learning app aims to maximize the number of practice repetitions per unit of time while providing complete language-learning capabilities.",
+    "description": "Free English learning app providing complete language-learning capabilities. No nonsense, just productive learning drill.",
     "technologies": [
       "React",
       "TypeScript",
