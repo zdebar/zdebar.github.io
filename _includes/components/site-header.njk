@@ -1,27 +1,31 @@
-<header class="site-header sticky top-0 z-100 border-b border-line bg-paper backdrop-blur-[14px]">
+<header class="sticky top-0 z-100 border-b border-line bg-paper backdrop-blur-[14px]">
   <div class="page-width flex h-18 items-center justify-between">
-    <a class="wordmark inline-flex shrink-0 items-center gap-2 whitespace-nowrap" href="{{ '/' | url }}#top" aria-label="Zdeněk Barth, home">
-      <span class="wordmark-mark grid size-7.5 place-items-center rounded-full" aria-hidden="true">ZB</span>
+    <a class="inline-flex shrink-0 items-center gap-2 whitespace-nowrap text-xs leading-[1.6] font-bold tracking-[-0.03em]" href="{{ '/' | url }}#top" aria-label="Zdeněk Barth, home">
+      <span class="grid size-7.5 place-items-center rounded-full bg-blue font-serif text-[10px] italic text-white" aria-hidden="true">ZB</span>
       <span>Zdeněk Barth</span>
     </a>
-    <details class="mobile-menu relative sm:hidden">
-      <summary class="mobile-menu-toggle">
+    <details class="group relative sm:hidden" data-mobile-menu>
+      <summary class="inline-flex cursor-pointer list-none items-center gap-2 text-xs leading-[1.6] font-semibold text-ink focus-visible:outline-2 focus-visible:outline-orange focus-visible:outline-offset-4 [&::-webkit-details-marker]:hidden">
         <span>Menu</span>
-        <span class="hamburger-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="grid w-4 gap-1" aria-hidden="true">
+          <span class="h-px bg-current transition-transform duration-200 group-open:translate-y-[5px] group-open:rotate-45"></span>
+          <span class="h-px bg-current transition-opacity duration-200 group-open:opacity-0"></span>
+          <span class="h-px bg-current transition-transform duration-200 group-open:-translate-y-[5px] group-open:-rotate-45"></span>
+        </span>
       </summary>
-      <nav class="mobile-menu-panel" aria-label="Main navigation">
+      <nav class="absolute right-0 top-[calc(100%+16px)] z-10 grid min-w-40 gap-1 border border-line bg-paper p-2 shadow-[0_12px_28px_rgba(32,39,32,0.12)] [&>a]:block [&>a]:px-3 [&>a]:py-2.5 [&>a]:text-xs [&>a]:leading-[1.6] [&>a]:font-semibold" aria-label="Main navigation" data-mobile-menu-panel>
         {% include "components/site-nav-links.njk" %}
       </nav>
     </details>
-    <nav class="desktop-nav hidden items-center gap-6 sm:flex" aria-label="Main navigation">
+    <nav class="hidden items-center gap-6 text-xs leading-[1.6] font-semibold sm:flex" aria-label="Main navigation">
         {% include "components/site-nav-links.njk" %}
       </nav>
   </div>
 </header>
 <script>
-  document.querySelectorAll(".mobile-menu-panel a").forEach(function attachMobileMenuClose(link) {
+  document.querySelectorAll("[data-mobile-menu-panel] a").forEach(function attachMobileMenuClose(link) {
     link.addEventListener("click", function closeMobileMenu() {
-      link.closest(".mobile-menu").open = false;
+      link.closest("[data-mobile-menu]").open = false;
     });
   });
 </script>
